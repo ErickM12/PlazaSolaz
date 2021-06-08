@@ -1,0 +1,1 @@
+    titleThree = document.getElementsByTagName("h3");
