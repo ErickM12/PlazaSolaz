@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprende Bootstrap</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div style="background-color: red;" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <h1>Hola</h1>
+            <div class="col-12 col-md-9">
+                <section>
+                    <article>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h1 class="text-center">Registro de usuario</h1>
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Nombre:</label>
+                                            <input class="form-control" type="text" id="name" name="name" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Primer apellido</label>
+                                            <input class="form-control" type="text" id="surname" name="surname" />
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-md-6 ">
+                                    <h1 class="text-center">Mensaje</h1>
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Correo electrónico</label>
+                                            <input class="form-control" type="email" id="email" name="email" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Comentario</label>
+                                            <textarea class="form-control" rows="3" id="message"
+                                                name="message"></textarea>
+                                        </div>
+                                        <div class="text-right">
+                                            <button class="text-right">registrar</button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
             </div>
-            <div style="background-color: royalblue;" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <h1>Azul rey</h1>
-            </div>
-            <div style="background-color: rgb(192, 29, 178);" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <h1>Purpura</h1>
-            </div>
-            <div style="background-color: rgb(97, 225, 65);" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <h1>Verde</h1>
-            </div>
-            <div style="background-color: rgb(231, 116, 22);" class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                <h1>Naranja</h1>
+            <div class="col-12 col-md-3">
+                <aside>
+                    <div class="bg-danger">asas</div>
+                </aside>
+
             </div>
         </div>
+
     </div>
-   
+
+
+
 </body>
+
 </html>

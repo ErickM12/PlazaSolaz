@@ -40,6 +40,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../pokemon.html">Pokemones</a>
                 </li>
+               
 
             </ul>
             <ul class="navbar-nav">
@@ -69,10 +70,15 @@
                         </figure>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6">
-                        <p class="font-italic">Este Pokémon nace con una semilla en el lomo, que brota con el paso del
+                        <p id="ballBlue" class="font-italic">Este Pokémon nace con una semilla en el lomo, que brota con
+                            el paso del
                             tiempo.</p>
-                        <p>Versiones:<i data-feather="disc" class="text-primary"></i><i data-feather="disc"
-                                class="text-danger"></i></p>
+                        <p  id="ballRed" class="font-italic">Desde que nace, crece alimentándose de los nutrientes que
+                            contiene la semilla de su lomo.</p>
+                        <p>Versiones:
+                            <i onclick="viewBallBlue()"  data-feather="disc" class="text-primary"></i>
+                            <i onclick="viewBallRed()"  data-feather="disc" class="text-danger"></i>
+                        </p>
                         <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
                             <div class="card-body">
                                 <div class="row">
@@ -110,36 +116,22 @@
             </div>
         </article>
     </section>
-
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
-                    <figure class="text-center">
-                        <img width="300" height="300" src="../../assets/img/eeve.png" class="img-fluid" />
-                    </figure>
-                    
-                </div>
-                <div class="col-12 col-sm-12 col-md-6">
-                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label>Altura</label>
-                                        <p class="text-dark">12m</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label>Categoría</label>
-                                        <p class="text-dark">lagartija</p>
-                                    </div>
-                                </div>
-                            </div>
-
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <form action="" method="" role="form">
+                        <div class="form-group">
+                            <label>Nombre:<i class="text-danger">*</i></label>
+                            <input class="form-control" id="name" type="text"  />
                         </div>
-                    </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-success" onclick="createUser()">
+                                Registrar usuario
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -149,6 +141,7 @@
     <script>
         feather.replace()
     </script>
+    <script src="../../js/learnJavaScript.js"></script>
 </body>
 
 </html>
